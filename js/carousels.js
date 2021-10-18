@@ -1,6 +1,6 @@
 let partners = document.querySelector(".glide__slides")
 
-let glide = new Glide('.glide', {
+let partnersSlide = new Glide('.glide', {
   type: 'carousel',
   autoplay: 20,
   startAt: 0,
@@ -20,7 +20,7 @@ for (let index = 0; index < 15; index++) {
   partners.innerHTML += test
   
 }
-glide.mount()
+partnersSlide.mount()
 
 
 
