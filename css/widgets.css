@@ -268,3 +268,13 @@
    .bitcoin-list span.BTCmktcapAUD {
     background:url(../images/icons/aud.png) no-repeat left center
    }
+
+   .widget {
+       /* max-width: 40%; */
+       align-self: flex-end;
+   }
+
+   .widget--small {
+    /* max-width: 10em; */
+    
+}

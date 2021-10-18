@@ -1,13 +1,16 @@
+.price-table {
 
+    transition: 200ms;
+   }
    .pricing-panel {
     position:relative;
     text-align:center;
-    color: #000;
+    color: #fff;
    }
    .pricing-panel .pricing--heading {
     /* box-shadow:0 10px 20px rgba(224,224,224,.4); */
     border-radius:2px;
-    background-color:#fff;
+    background-color:var(--secondary-bg);
     padding:50px 64px;
     margin-bottom:30px
    }
@@ -57,13 +60,14 @@
     background-image:-webkit-linear-gradient(180deg,#f8a137 0%,#fbac47 64%,#feb756 100%);
     background-image:-ms-linear-gradient(180deg,#f8a137 0%,#fbac47 64%,#feb756 100%);
     background-image:linear-gradient(180deg,#f8a137 0%,#fbac47 64%,#feb756 100%); */
-    background-image:linear-gradient(180deg,#f8a137 0%,#fbac47 64%,#feb756 100%);
+    /* background-image:linear-gradient(180deg,#f8a137 0%,#fbac47 64%,#feb756 100%); */
+    background-color: var(--primary-accent);
     padding:70px 64px;
     margin-top:-20px
    }
    .pricing-active .pricing-panel .pricing--heading p,
    .pricing-active .pricing-panel .pricing--heading .pricing--desc {
-    color:#fff
+    color:#000
    }
    .pricing--notes {
     color:#a5a5a5;
@@ -136,4 +140,16 @@
      .pricing-panel {
          width: 70%;
      }
+}
+
+.selected {
+    transform: scale(1.1);
+}
+.selected .pricing--heading{
+    border: 1px solid var(--primary-accent);
+}
+
+.unselected {
+    transform: scale(0.9);
+    /* filter: grayscale(100%); */
 }

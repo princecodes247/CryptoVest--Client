@@ -55,9 +55,11 @@ header {
     padding: 0 100% 0 0;
 }
 
-.sect--hero, .sect--why {
+.sect--hero, .sect--why, .sect--charts, .sect--pricing {
     display: flex;
 }
+
+
 
 .partners__list {
     display: flex;
@@ -76,20 +78,28 @@ header {
 
 .partners {
     margin-top: 30px;
+    align-self: flex-start;
+    /* background-color: red; */
+    width: 40em;
 }
 
 .partners__list {
     margin-top: 30px;
-    background-color: red;
+    /* background-color: red; */
     padding: 10px;
     height: 110px;
 }
 
 .partners__item {
     min-width: 100px;
-    background-color: rgb(209, 156, 156);
+    /* background-color: rgb(209, 156, 156); */
     padding: 10px;
     height: 100%;
+    filter: grayscale(100%) contrast(0%) brightness(100%);
+}
+
+.partners__item img {
+    width: 100%;
 }
 
 .sect--income_summary {
@@ -178,6 +188,11 @@ header {
     height: 20em;
     width: 25em;
     background-color: var(--secondary-bg);
+}
+
+.sect--pricing .prices{
+    flex-direction: row;
+    margin-top: 80px;
 }
 
 @media only screen and (min-width:992px) and (max-width:1200px) {
