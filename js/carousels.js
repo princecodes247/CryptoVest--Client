@@ -6,14 +6,14 @@ let glide = new Glide('.glide', {
   startAt: 0,
   perView: 3,
   focusAt: 1, 
-  gap: 20,
+  gap: 10,
   animationTimingFunc: "linear",
   animationDuration: 4000,
 
 })
 
 
-for (let index = 0; index < 3; index++) {
+for (let index = 0; index < 15; index++) {
     let test = `<li class="partners__item glide__slide">
     <img src="../assets/images/partners/${index}.svg" alt="ag" />
   </li>`    
