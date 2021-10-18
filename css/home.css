@@ -1,0 +1,205 @@
+
+
+header {
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    /* background-color: var(--tertiary-bg); */
+    background-color: transparent;
+    height: 10vh;
+    width: 100%;
+    /* padding: 0 10px; */
+    padding: 0 5%;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.nav_links {
+    gap: 20px;
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.profile__pic {
+    background-color: green;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.cont--main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+    min-height: 100vh;
+    /* background-color: red; */
+}
+
+.sect {
+    padding: 20px 4em;
+    
+}
+
+.logo {
+    padding: 0 100% 0 0;
+}
+
+.sect--hero, .sect--why {
+    display: flex;
+}
+
+.partners__list {
+    display: flex;
+    gap: 10px;
+}
+
+.sect > .col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__text .btn{
+    margin-top: 20px;
+}
+
+.partners {
+    margin-top: 30px;
+}
+
+.partners__list {
+    margin-top: 30px;
+    background-color: red;
+    padding: 10px;
+    height: 110px;
+}
+
+.partners__item {
+    min-width: 100px;
+    background-color: rgb(209, 156, 156);
+    padding: 10px;
+    height: 100%;
+}
+
+.sect--income_summary {
+    /* flex: 8; */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.sect--income_summary h3 {
+    align-self: flex-start;
+}
+.summary {
+    width: 80%;
+    margin: 10%;
+    margin-top: 30px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2% 5%;
+}
+
+.summary__details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary__balance .big{
+    font-size: 4em;
+}
+
+.sect--analytics {
+    /* flex: 8; */
+    /* height: 30%; */
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.asset_list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 50px;
+    /* background-color: rgb(41, 139, 41); */
+    /* list-style: decimal;
+    list-style-position: inside; */
+  
+    
+}
+
+.asset {
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 200ms;
+    border-bottom: 1px solid var(--secondary-accent);
+}
+
+.asset:hover {
+   background-color: rgba(100, 100, 100, 0.1);
+}
+
+.asset__icon {
+   width: 20px;
+   height: 20px;
+   background-color: red;
+}
+
+.asset::before {
+    position: absolute;
+    left: -6%;
+    content: "1";
+}
+
+.graph {
+    height: 20em;
+    width: 25em;
+    background-color: var(--secondary-bg);
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+}
+@media only screen and (min-width:320px) and (max-width:767px) {
+    .nav_links {
+        display: none;
+    }
+
+    header .cta_btns{
+        display: none;
+    }
+
+    .sect.sect--hero .col:last-child {
+        display: none;
+    }
+
+    .sect--why {
+        flex-direction: column;
+    }
+}

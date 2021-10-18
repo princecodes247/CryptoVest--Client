@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/side_menu.css">
+    <link rel="stylesheet" href="css/sub_nav.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <aside class="cont--menu">
+        <ul class="menu">
+            <li class="menu__item active">
+                <a href="./dashboard.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                    <ion-icon name="wallet-outline"></ion-icon>
+                </div>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="./market.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                    <ion-icon name="stats-chart-outline"></ion-icon>
+                </div>
+                    <p>Market</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="./payment.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                    <ion-icon name="card-outline"></ion-icon>
+                </div>
+                    <p>Deposit/Withdrawal</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="./accounts.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                </div>
+                    <p>Transactions History</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="./profile.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </div>
+                    <p>Settings</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="cont--main">
+        <header>
+            <div class="profile">
+                <div class="profile__pic"></div>
+                <div class="profile__name">
+                    <p>John Doe</p>
+                </div>
+            </div>
+            <div class="waves-effect waves-light btn">Log Out</div>
+        </header>
+        <section class="sect sect--income_summary small">
+            <div class="summary">
+                <h3>Balance</h3>
+               <div class="summary__details">
+                <p>Investments: $1399</p>
+                <p>Today's Profit: $1399</p>
+               </div>
+                <div class="summary__balance">
+                    <p>Your Balance is </p>
+                    <p class="big">$140</p>
+                </div>
+            </div>
+        </section>
+       
+        <section class="sect sect--funding">
+            <h3></h3>
+            <nav class="sub_nav">
+                <div class="sub_nav__item ">Withdraw</div>
+                <div class="sub_nav__item ">Deposit</div>
+            </nav>
+            <div class="pane--deposit">
+                <nav class="sub_nav">
+                    <div class="sub_nav__item ">Bank Transfer</div>
+                <div class="sub_nav__item ">Reference</div>
+                <div class="sub_nav__item ">Bitcoin.com</div>
+                <div class="sub_nav__item ">Changely</div>
+                </nav>
+                <div class="deposit_option">
+                    <h6>Bank Transfer</h6>
+                    <p>Country</p>
+                    <p>Sorry your region does not support bank transfers</p>
+                </div>
+                <div class="deposit_option">
+                    <h6>Reference Code</h6>
+                    <p>Country</p>
+                    <p>Sorry your region does not support references</p>
+                </div>
+                <div class="deposit_option">
+                    <h6>Bitcoin.com</h6>
+                    <p>Copy the address below and click the 'Proceed to deposit' button to complete the transaction</p>
+                    <input type="text" value="nainisdas">
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="btn">Proceed to deposit</a>
+                </div>
+                <div class="deposit_option">
+                    <h6>Changely</h6>
+                    <p>Copy the address below and click the 'Proceed to deposit' button to complete the transaction</p>
+                    <input type="text" value="nainisdas">
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="btn">Proceed to deposit</a>
+                </div>
+                
+                <button class="waves-effect waves-light btn">Deposit</button>
+            </div>
+            <div class="pane--withdraw">
+                <h5>Make Withdrawal</h5>
+                <p>
+                    <b>Note:</b>
+                    There's a withdrawal commission that must be paid before any withdrawal can be confirmed. <br> 
+                    Withdrawal commission should be made to this address. <br>
+                    <code>njonfosnjfd</code>
+                </p>
+
+                <div class="withdrawal_form">
+                    <p>Balance: $4003.00</p>
+                    <p>Balance too low to withdraw</p>
+                    <select name="" id="">
+                        <option value="Bank">Bank</option>
+                        <option value="Crypto">Crypto</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="Bank">Bank</option>
+                        <option value="Crypto">Crypto</option>
+                    </select>
+                </div>
+                <button disabled class="waves-effect waves-light btn">Withdraw</button>
+            </div>
+            
+        </section>
+
+        <footer>
+            copyright
+        </footer>
+    </main>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ -->
+ <script type="module" src="ion.esm.js"></script>
+ <script nomodule src="ion.js"></script>
+</body>
+</html>

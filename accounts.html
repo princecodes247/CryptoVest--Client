@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/side_menu.css">
+    <link rel="stylesheet" href="css/sub_nav.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+       
+    </head>
+<body>
+    <aside class="cont--menu">
+        <ul class="menu">
+            <li class="menu__item">Dashboard</li>
+            <li class="menu__item">Market</li>
+            <li class="menu__item">Deposit/Withdrawal</li>
+            <li class="menu__item">Transactions History</li>
+            <li class="menu__item">Settings</li>
+        </ul>
+    </aside>
+    <main class="cont--main">
+        <header>
+            <div class="profile">
+                <div class="profile__pic"></div>
+                <div class="profile__name">
+                    <p>John Doe</p>
+                </div>
+            </div>
+            <div class="button">Log Out</div>
+        </header>
+        <section class="sect sect--account_details">
+           <div class="">
+            <h3>Add accounts</h3>
+           </div>
+           
+        </section>
+        <section class="sect sect--account_info">
+            <h3>Existing Accounts</h3>
+            <table>
+                <thead>
+                  <tr>
+                      <th>Acc No./Wallet</th>
+                      <th>Acc Name/Type</th>
+                      <th>Bank Name/Crypto</th>
+                      <th>Routing No.</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>ndkfossdfsdfsdlndsofnd</td>
+                    <td>Crypto</td>
+                    <td>BTC</td>
+                    <td>Not available</td>
+                  </tr>
+                  <tr>
+                    <td>ndkfossdfsdfsdlndsofnd</td>
+                    <td>Crypto</td>
+                    <td>BTC</td>
+                    <td>Not available</td>
+                  </tr>
+                  <tr>
+                    <td>ndkfossdfsdfsdlndsofnd</td>
+                    <td>Crypto</td>
+                    <td>BTC</td>
+                    <td>Not available</td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+        <section class="sect sect--account_info">
+            <h4>Add Bank Account</h4>
+            <form action="" method="post">
+                <div class="input_field">
+                    <input type="text" name="routing_number" id="routing_number">
+                    <label for="routing_number">Routing Number</label>
+                </div>
+                <div class="input_field">
+                    <input type="text" name="account_number" id="account_number">
+                    <label for="account_number">Account Number</label>
+                </div>
+                <div class="input_field">
+                    <input type="text" name="bank_name" id="bank_name">
+                    <label for="bank_name">Bank Name</label>
+                </div>
+                <div class="input_field">
+                    <input type="text" name="account_name" id="account_name">
+                    <label for="account_name">Account Name</label>
+                </div>
+ 
+                <br>
+                <button class="btn">Add Account</button>
+            </form>
+        </section>
+        <section class="sect sect--account_info">
+            <h4>Add Crypto Wallet</h4>
+            <form action="" method="post">
+                <div class="input_field">
+                    <input type="text" name="wallet_address" id="wallet_address">
+                    <label for="wallet_address">Wallet Address</label>
+                </div>
+                <!-- <div class="input_field">
+                    <input type="text" name="account_number" id="account_number">
+                    <label for="account_number">Account Number</label>
+                </div> -->
+               <br>
+                <button class="btn">Add Wallet</button>
+            </form>
+        </section>
+        <footer>
+            copyright
+        </footer>
+    </main>
+</body>
+</html>

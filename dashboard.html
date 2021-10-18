@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/side_menu.css">
+    <link rel="stylesheet" href="css/sub_nav.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <aside class="cont--menu">
+        <ul class="menu">
+            <li class="menu__item active">
+                <a href="./dashboard.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                    <ion-icon name="wallet-outline"></ion-icon>
+                </div>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="./market.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                    <ion-icon name="stats-chart-outline"></ion-icon>
+                </div>
+                    <p>Market</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="./payment.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                    <ion-icon name="card-outline"></ion-icon>
+                </div>
+                    <p>Deposit/Withdrawal</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="./history.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                </div>
+                    <p>Transactions History</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="./accounts.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                        <ion-icon name="business-outline"></ion-icon>
+                </div>
+                    <p>Accounts</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="./profile.html" target="_blank" rel="noopener noreferrer">
+                    <div class="menu__icon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </div>
+                    <p>Settings</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="cont--main">
+        <header>
+            <div class="profile">
+                <div class="profile__pic"></div>
+                <div class="profile__name">
+                    <p>John Doe</p>
+                </div>
+            </div>
+            <div class="waves-effect waves-light btn">Log Out</div>
+        </header>
+        <section class="sect sect--income_summary">
+            <h3>Wallet Details</h3>
+            <div class="summary">
+               <div class="summary__details">
+                <p>Investments: $1399</p>
+                <p>Today's Profit: $1399</p>
+               </div>
+                <div class="summary__balance">
+                    <p>Your Balance is </p>
+                    <p class="big">$140</p>
+                </div>
+            </div>
+        </section>
+        <section class="sect sect--analytics">
+            <div class="graph">
+
+            </div>
+        </section>
+        <section class="sect sect--market">
+            <h3>Top 10 Ranking</h3>
+            <nav class="sub_nav">
+                <div class="sub_nav__item crypto">Crypto</div>
+                <div class="sub_nav__item stocks">Stocks</div>
+            </nav>
+            <ol class="asset_list">
+                <li class="asset">
+                    
+                    <div class="asset__text">
+                        <p class="asset__name">
+                            BTaC
+                        </p>
+                        <p class="asset__price">$345,788</p>
+                    </div>
+                    <div class="asset__change">
+                        <p>+21%</p>
+                    </div>
+                    <div class="asset__graph">LLL</div>
+                </li>
+                <li class="asset">
+                    
+                    <div class="asset__text">
+                        <p class="asset__name">
+                            BTaC
+                        </p>
+                        <p class="asset__price">$345,788</p>
+                    </div>
+                    <div class="asset__change">
+                        <p>+21%</p>
+                    </div>
+                    <div class="asset__graph">LLL</div>
+                </li>
+                <li class="asset">
+                    
+                    <div class="asset__text">
+                        <p class="asset__name">
+                            BTaC
+                        </p>
+                        <p class="asset__price">$345,788</p>
+                    </div>
+                    <div class="asset__change">
+                        <p>+21%</p>
+                    </div>
+                    <div class="asset__graph">LLL</div>
+                </li>
+                <li class="asset">
+                    <div class="asset__text">
+                        <p class="asset__name">
+                            BTC
+                        </p>
+                        <p class="asset__price">$345,788</p>
+                    </div>
+                    <div class="asset__change">
+                        <p>+21%</p>
+                    </div>
+                    <div class="asset__graph">LLL</div>
+                </li>
+            </ol>
+            <button class="waves-effect waves-light btn">Check out market</button>
+        </section>
+        <section class="sect sect--referrals">
+            <h3>Referral Link</h3>
+            <input type="text" value="http://shiahdiads">
+            <button class="waves-effect waves-light btn">Copy</button>
+            <h3>Referral History</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <footer>
+            copyright
+        </footer>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let url = "https://api.coinranking.com/v2/coins"
+        let token = "53a0b0a7e4f2fa59519e4"
+
+        fetch(url, {
+            headers: {
+                "x-access-token": token
+            }
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+    </script>
+ 
+</body>
+</html>
