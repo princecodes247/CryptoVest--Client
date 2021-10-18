@@ -133,12 +133,16 @@
     /* .pricing {
         display: none;
     } */
+    .sect {
+        padding: 0 10px;
+
+    }
     .pricing .container .prices {
         flex-direction: column;
         /* width: 90%; */
      }
      .pricing-panel {
-         width: 70%;
+         width: 90%;
      }
 }
 

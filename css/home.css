@@ -1,15 +1,18 @@
 
 
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     /* justify-content: flex-end; */
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     /* background-color: var(--tertiary-bg); */
-    background-color: transparent;
+    background-color: var(--header-bg);
     height: 10vh;
     width: 100%;
+    z-index: 99;
     /* padding: 0 10px; */
     padding: 0 5%;
 }
@@ -59,7 +62,21 @@ header {
     display: flex;
 }
 
-
+.sect--hero {
+    background: url("../assets/images/backgrounds/blob-scene-1.svg") no-repeat;
+    background: url("../assets/images/backgrounds/layered-waves-3.svg") no-repeat;
+    background: url("../assets/images/backgrounds/stacked-steps-3.svg") no-repeat;
+    background: url("../assets/images/backgrounds/low-poly-grid-2.svg") no-repeat;
+    background: url("../assets/images/backgrounds/low-poly-grid-3.svg") no-repeat;
+    background: url("../assets/images/backgrounds/stacked-waves-3.svg") no-repeat;
+    background-size: 100%;
+    /* background-clip: content-box; */
+    /* background-attachment: fixed; */
+    background-position: bottom;
+    background-position-y: -50px;
+    height: 100vh;
+    min-height: 20em;
+}
 
 .partners__list {
     display: flex;
@@ -214,12 +231,39 @@ header {
     header .cta_btns{
         display: none;
     }
+    .sect--hero {
+        background-size: 300%;
+        /* background-position-y: 20px; */
+        background-origin: top;
+    }
 
     .sect.sect--hero .col:last-child {
         display: none;
     }
 
-    .sect--why {
+    .sect--why, .sect {
         flex-direction: column;
+    }
+    .partners {
+        width: 100%;
+    }
+
+    .widget {
+        margin: 30px 0;
+    }
+}
+
+@media only screen and (min-width:590px) and (max-width:767px) {
+    .sect--hero {
+        /* background-size: 300%; */
+        background-position-y: -120px;
+        /* background-origin: top; */
+    }
+}
+@media only screen and (min-width:643px) and (max-width:767px) {
+    .sect--hero {
+        /* background-size: 300%; */
+        background-position-y: -250px;
+        /* background-origin: top; */
     }
 }
