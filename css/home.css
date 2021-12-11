@@ -1,6 +1,7 @@
 
 
 header {
+    /* position: fixed; */
     position: sticky;
     top: 0;
     display: flex;
@@ -9,6 +10,7 @@ header {
     align-items: center;
     gap: 10px;
     /* background-color: var(--tertiary-bg); */
+    /* background-color: #000; */
     background-color: var(--header-bg);
     height: 10vh;
     width: 100%;
@@ -64,10 +66,6 @@ header {
 
 .sect--hero {
     background: url("../assets/images/backgrounds/blob-scene-1.svg") no-repeat;
-    background: url("../assets/images/backgrounds/layered-waves-3.svg") no-repeat;
-    background: url("../assets/images/backgrounds/stacked-steps-3.svg") no-repeat;
-    background: url("../assets/images/backgrounds/low-poly-grid-2.svg") no-repeat;
-    background: url("../assets/images/backgrounds/low-poly-grid-3.svg") no-repeat;
     background: url("../assets/images/backgrounds/stacked-waves-3.svg") no-repeat;
     background-size: 100%;
     /* background-clip: content-box; */
